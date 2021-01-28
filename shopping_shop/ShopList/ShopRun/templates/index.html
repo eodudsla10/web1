@@ -1,0 +1,66 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <!-- Featured Starts Here -->
+    <div class="featured-items">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>Featured Items</h1>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <a href="single-product.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-01.jpg'%}" alt="Item 1">
+                  <h4>테이퍼드 히든 밴딩 크롭 슬랙스</h4>
+                  <h6>$15.00</h6>
+                </div>
+              </a>
+              <a href="single-product2.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-02.jpg'%}" alt="Item 2">
+                  <h4>베이식한 디자인의 오버사이즈 블레이저</h4>
+                  <h6>$25.00</h6>
+                </div>
+              </a>
+              <a href="single-product3.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-03.jpg'%}" alt="Item 3">
+                  <h4>베이식한 디자인과 여유 있는 레귤러 핏의 스웨트 팬츠</h4>
+                  <h6>$35.00</h6>
+                </div>
+              </a>
+              <a href="single-product4.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-04.jpg'%}" alt="Item 4">
+                  <h4>베이식한 디자인의 레더 코트 스니커즈</h4>
+                  <h6>$45.00</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featred Ends Here -->
+{% endblock content %}

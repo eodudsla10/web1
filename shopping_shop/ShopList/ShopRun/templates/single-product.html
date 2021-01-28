@@ -1,0 +1,118 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+    <!-- Page Content -->
+    <!-- Single Starts Here -->
+    <div class="single-product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>Single Product</h1>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product-slider">
+              <div id="slider" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="{% static 'images/big/big-01.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-02.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-03.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-04.jpg'%}" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-content">
+              <h4>테이퍼드 히든 밴딩 크롭 슬랙스</h4>
+              <h6>$15.00</h6>
+              <p>편안하면서도 슬림한 테이퍼드 핏의 히든 밴딩 크롭 슬랙스.
+                4%의 폴리우레탄이 포함된 양방향 스트레치 T/R 원단을 사용해 신축성이 뛰어나며 덕분에 자유로운 활동성을 보장한다. 적당한 두께와 중량으로 한여름을 제외한 사계절 내내 활용할 수 있다.
+                T/R 원단의 약점인 보풀 현상을 개선하고 높은 품질 수준을 갖춘 원단을 만들기 위해 원료염 방식을 도입하고 완성 가공 단계에서 일반적인 T/R 원단보다 5가지의 공정을 추가해 총 9가지의 공정을 거쳐 가공했다.
+                두 번에 걸친 모소 가공(Singeing)으로 표면의 잔털을 없애고 KD 장비를 이용한 고온·고압의 증포 가공(Full decazing)으로 표면을 고르고 평평하게 압착시켰다. 이후 스폰징 가공(Sponging)으로 인위적 광택을 제거하는 한편 수축률을 최소화했다.
+                위의 공정을 거쳐 만들어진 원단은 KATRI(한국 의류 시험 연구원)의 필링 테스트 기준을 통과해 우수한 품질을 입증했다.
+                허리 양옆으로는 엘라스틱 밴드가 겉에서 보이지 않는 히든 밴딩 구조를 적용해 깔끔하면서도 편안한 착용감을 느낄 수 있다.
+                내부 구조는 고급 남성복 정장 팬츠의 사양을 적용했으며, 이중 훅과 속단추를 사용해 견고하고 안정적으로 결속할 수 있다.
+                상의를 바지 안으로 넣어서 착용할 때 상의 밑단이 쉽게 빠져나오지 않도록 허리 안단에 실리콘 프린팅 처리한 웨이스트 밴드를 적용했다.
+                부자재로는 YKK社의 지퍼 및 훅을 사용해 내구성을 높였고, 천연 소뿔 단추로 고급스러움을 더했다.
+                트렌디한 실루엣과 다양한 기능적 요소들을 갖춰 데일리 아이템으로 활용도가 높은 제품이다. </p>
+              <span>7 left on stock</span>
+              <form action="" method="get">
+                <label for="quantity">Quantity:</label>
+                <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                	onfocus="if(this.value == '1') { this.value = ''; }" 
+                    onBlur="if(this.value == '') { this.value = '1';}"
+                    value="1">
+                <input type="submit" class="button" value="Order Now!">
+              </form>
+              <div class="down-content">
+                <div class="share">
+                  <h6>Share: <span><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></span></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Single Page Ends Here -->
+
+
+    <!-- Similar Starts Here -->
+    <div class="featured-items">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>You May Also Like</h1>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <a href="single-product.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-01.jpg'%}" alt="Item 1">
+                  <h4>테이퍼드 히든 밴딩 크롭 슬랙스</h4>
+                  <h6>$15.00</h6>
+                </div>
+              </a>
+              <a href="single-product2.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-02.jpg'%}" alt="Item 2">
+                  <h4>베이식한 디자인의 오버사이즈 블레이저</h4>
+                  <h6>$25.00</h6>
+                </div>
+              </a>
+              <a href="single-product3.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-03.jpg'%}" alt="Item 3">
+                  <h4>베이식한 디자인과 여유 있는 레귤러 핏의 스웨트 팬츠</h4>
+                  <h6>$35.00</h6>
+                </div>
+              </a>
+              <a href="single-product4.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-04.jpg'%}" alt="Item 4">
+                  <h4>Sed purus quam</h4>
+                  <h6>$45.00</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Similar Ends Here -->
+{% endblock content %}

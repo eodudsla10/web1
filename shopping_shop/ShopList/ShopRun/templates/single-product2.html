@@ -1,0 +1,115 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+    <!-- Page Content -->
+    <!-- Single Starts Here -->
+    <div class="single-product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>Single Product</h1>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product-slider">
+              <div id="slider" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="{% static 'images/big/big-05.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-06.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-07.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-08.jpg'%}" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-content">
+              <h4>Single Product Name</h4>
+              <h6>$25.00</h6>
+              <p>베이식한 디자인의 오버사이즈 블레이저.
+                4%의 폴리우레탄이 포함된 양방향 스트레치 T/R원단을 사용하여 신축성이 뛰어나며 덕분에 자유로운 활동성을 보장한다.
+                넉넉한 어깨너비의 오버사이즈 핏으로 편안하고 자연스러운 실루엣을 연출할 수 있다.
+                2버튼 여밈에 노치트 라펠, 플랩 포켓 등 테일러드 재킷의 기본에 충실한 사양으로 구성하여 디자인했다.
+                정통 남성복 테일러드 재킷의 제조 공법에 따라 가슴에는 체스트 캔버스가, 어깨에는 2mm패드와 슬리브 헤드가 사용되어 입체적인 형태가 자연스럽고 안정적으로 유지된다.
+                부자재로는 천연 소뿔 단추를 사용해 고급스러움을 더했다.
+                남성복 테일러드 재킷을 전문으로 생산하는 공장에서 꼼꼼한 봉제와 엄격한 검품 과정을 거쳐 완성도 있게 제작했다. </p>
+              <span>7 left on stock</span>
+              <form action="" method="get">
+                <label for="quantity">Quantity:</label>
+                <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                	onfocus="if(this.value == '1') { this.value = ''; }" 
+                    onBlur="if(this.value == '') { this.value = '1';}"
+                    value="1">
+                <input type="submit" class="button" value="Order Now!">
+              </form>
+              <div class="down-content">
+                <div class="share">
+                  <h6>Share: <span><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></span></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Single Page Ends Here -->
+
+
+     <!-- Similar Starts Here -->
+     <div class="featured-items">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>You May Also Like</h1>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <a href="single-product.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-01.jpg'%}" alt="Item 1">
+                  <h4>테이퍼드 히든 밴딩 크롭 슬랙스</h4>
+                  <h6>$15.00</h6>
+                </div>
+              </a>
+              <a href="single-product2.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-02.jpg'%}" alt="Item 2">
+                  <h4>베이식한 디자인의 오버사이즈 블레이저</h4>
+                  <h6>$25.00</h6>
+                </div>
+              </a>
+              <a href="single-product3.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-03.jpg'%}" alt="Item 3">
+                  <h4>베이식한 디자인과 여유 있는 레귤러 핏의 스웨트 팬츠</h4>
+                  <h6>$35.00</h6>
+                </div>
+              </a>
+              <a href="single-product4.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-04.jpg'%}" alt="Item 4">
+                  <h4>Sed purus quam</h4>
+                  <h6>$45.00</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Similar Ends Here -->
+{% endblock content %}

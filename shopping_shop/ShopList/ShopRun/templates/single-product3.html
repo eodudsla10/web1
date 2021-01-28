@@ -1,0 +1,113 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+    <!-- Page Content -->
+    <!-- Single Starts Here -->
+    <div class="single-product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>베이식한 디자인과 여유 있는 레귤러 핏의 스웨트 팬츠</h1>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product-slider">
+              <div id="slider" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="{% static 'images/big/big-09.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-10.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-11.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-12.jpg'%}" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-content">
+              <h4>Single Product Name</h4>
+              <h6>$35.00</h6>
+              <p>베이식한 디자인과 여유 있는 레귤러 핏의 스웨트 팬츠.
+                촘촘하게 짜여진 면 100% 프렌치 테리 원단을 사용하여 편안한 활동성을 제공한다.
+                허리와 발목 부위는 엘라스틱 밴드를 삽입하는 클래식한 스웨트 팬츠의 방식으로 제작했다.
+                허리 스트링 끝은 니켈 컬러의 금속 팁으로 마감하여 완성도를 높혔다.
+                편안한 착용감과 여유있는 실루엣을 갖추어 베이식한 데일리 웨어로 활용도가 높은 제품이다. </p>
+              <span>7 left on stock</span>
+              <form action="" method="get">
+                <label for="quantity">Quantity:</label>
+                <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                	onfocus="if(this.value == '1') { this.value = ''; }" 
+                    onBlur="if(this.value == '') { this.value = '1';}"
+                    value="1">
+                <input type="submit" class="button" value="Order Now!">
+              </form>
+              <div class="down-content">
+                <div class="share">
+                  <h6>Share: <span><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></span></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Single Page Ends Here -->
+
+
+    <!-- Similar Starts Here -->
+    <div class="featured-items">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>You May Also Like</h1>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <a href="single-product.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-01.jpg'%}" alt="Item 1">
+                  <h4>테이퍼드 히든 밴딩 크롭 슬랙스</h4>
+                  <h6>$15.00</h6>
+                </div>
+              </a>
+              <a href="single-product2.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-02.jpg'%}" alt="Item 2">
+                  <h4>베이식한 디자인의 오버사이즈 블레이저</h4>
+                  <h6>$25.00</h6>
+                </div>
+              </a>
+              <a href="single-product3.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-03.jpg'%}" alt="Item 3">
+                  <h4>베이식한 디자인과 여유 있는 레귤러 핏의 스웨트 팬츠</h4>
+                  <h6>$35.00</h6>
+                </div>
+              </a>
+              <a href="single-product4.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-04.jpg'%}" alt="Item 4">
+                  <h4>Sed purus quam</h4>
+                  <h6>$45.00</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Similar Ends Here -->
+{% endblock content %}

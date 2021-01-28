@@ -1,0 +1,80 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+    <!-- Page Content -->
+    <!-- Items Starts Here -->
+    <div class="featured-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>Featured Items</h1>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div id="filters" class="button-group">
+              <button class="btn btn-primary" data-filter="*">All Products</button>
+              <button class="btn btn-primary" data-filter=".new">Newest</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="featured container no-gutter">
+
+        <div class="row posts">
+            <div id="1" class="item new col-md-4">
+              <a href="single-product.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/product/product-01.jpg'%}" alt="">
+                  <h4>테이퍼드 히든 밴딩 크롭 슬랙스</h4>
+                  <h6>$15.00</h6>
+                </div>
+              </a>
+            </div>
+            <div id="2" class="item high col-md-4">
+              <a href="single-product2.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/product/product-02.jpg'%}" alt="">
+                  <h4>베이식한 디자인의 오버사이즈 블레이저</h4>
+                  <h6>$25.00</h6>
+                </div>
+              </a>
+            </div>
+            <div id="3" class="item low col-md-4">
+              <a href="single-product3.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/product/product-03.jpg'%}" alt="">
+                  <h4>베이식한 디자인과 여유 있는 레귤러 핏의 스웨트 팬츠</h4>
+                  <h6>$35.00</h6>
+                </div>
+              </a>
+            </div>
+            <div id="4" class="item low col-md-4">
+              <a href="single-product4.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/product/product-04.jpg'%}" alt="">
+                  <h4>베이식한 디자인의 레더 코트 스니커즈</h4>
+                  <h6>$45.00</h6>
+                </div>
+              </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <li class="current-page"><a href="#">1</a></li>
+              <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featred Page Ends Here -->
+{% endblock content %}

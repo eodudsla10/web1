@@ -1,0 +1,113 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+
+    <!-- Page Content -->
+    <!-- Single Starts Here -->
+    <div class="single-product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>베이식한 디자인의 레더 코트 스니커즈</h1>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product-slider">
+              <div id="slider" class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="{% static 'images/big/big-13.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-14.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-15.jpg'%}" />
+                  </li>
+                  <li>
+                    <img src="{% static 'images/big/big-16.jpg'%}" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right-content">
+              <h4>베이식한 디자인의 레더 코트 스니커즈</h4>
+              <h6>$45.00</h6>
+              <p>갑피(Upper)는 고른 표면과 은은한 광택을 지닌 천연 소가죽을 사용해 고급스럽다.
+                안창(Insole)은 세계적인 기능성 인솔 전문 업체인 오솔라이트社의 제품을 사용해 뛰어난 쿠셔닝과 복원력으로 편안한 착화감을 제공한다. 
+                또한, 흡한속건과 항균, 소취 기능을 갖춰 신발 내부를 쾌적하게 유지시켜준다. 
+                겉창(Outsole)은 논슬립 패턴을 적용한 생고무창을 사용해 접지력이 우수하고 보행시 안정감을 더해준다.
+                군더더기 없이 깔끔한 디자인과 적당히 슬림한 쉐입으로 다양한 룩에 활용도가 높은 아이템이다. </p>
+              <span>7 left on stock</span>
+              <form action="" method="get">
+                <label for="quantity">Quantity:</label>
+                <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                	onfocus="if(this.value == '1') { this.value = ''; }" 
+                    onBlur="if(this.value == '') { this.value = '1';}"
+                    value="1">
+                <input type="submit" class="button" value="Order Now!">
+              </form>
+              <div class="down-content">
+                <div class="share">
+                  <h6>Share: <span><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></span></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Single Page Ends Here -->
+
+
+    <!-- Similar Starts Here -->
+    <div class="featured-items">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <div class="line-dec"></div>
+              <h1>You May Also Like</h1>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <a href="single-product.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-01.jpg'%}" alt="Item 1">
+                  <h4>테이퍼드 히든 밴딩 크롭 슬랙스</h4>
+                  <h6>$15.00</h6>
+                </div>
+              </a>
+              <a href="single-product2.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-02.jpg'%}" alt="Item 2">
+                  <h4>베이식한 디자인의 오버사이즈 블레이저</h4>
+                  <h6>$25.00</h6>
+                </div>
+              </a>
+              <a href="single-product3.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-03.jpg'%}" alt="Item 3">
+                  <h4>베이식한 디자인과 여유 있는 레귤러 핏의 스웨트 팬츠</h4>
+                  <h6>$35.00</h6>
+                </div>
+              </a>
+              <a href="single-product4.html">
+                <div class="featured-item">
+                  <img src="{% static 'images/item-04.jpg'%}" alt="Item 4">
+                  <h4>Sed purus quam</h4>
+                  <h6>$45.00</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Similar Ends Here -->
+{% endblock content %}
